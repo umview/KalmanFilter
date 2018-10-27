@@ -133,7 +133,7 @@ end
 
 dt=0.002;
 coe=14.6884 *dt;
-K2=0.008;
+K2=0.02829;%0.008
 line=load('imu.txt');
 line(:,2)=line(:,2)/coe;
 line(1,3)=line(1,1);
@@ -154,7 +154,7 @@ plot(X(1,:));
 %plot(Angle);
 %plot(Q_bias);
 %plot(raw(2,:)-Q_bias);
-%plot(line(:,4));
+plot(line(:,4));
 %plot(X(1,:)-Angle);
 %plot(X(1,:)-line(:,4)');
 %plot(K(1,:));
